@@ -1,0 +1,83 @@
+body {
+    margin: 20px;
+    font-family:  Tahoma, sans-serif;
+
+}
+
+img{
+    width: 200px;
+    height: 150px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 600px;
+    height: 240px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(./images/pngtree-black-business-atmosphere-business-card-background-image_239793.jpg);
+    color: goldenrod;
+    border-bottom: 8px solid goldenrod;
+    font-weight: bolder;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, .7), 0 17px 17px 0 rgba(0, 0, 0, .5);
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.logo img{
+    width: 20px;
+    height: 20px;
+    color: goldenrod;
+    background-color: white;
+    outline: none;
+    border: none;
+    fill: none;
+}
+.card .avatar{
+    position: absolute;
+    transition: 3s;
+    backface-visibility:hidden ;
+
+}
+
+.card .avatar:nth-child(2){
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+
+.card:hover img:nth-child(2){
+    transform: rotateY(0deg);  
+}
+
+.card:hover .avatar:nth-child(1){
+    transform: rotate(-180deg);
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
